@@ -11,4 +11,3 @@ BEGIN
         DBMS_OUTPUT.PUT_LINE(input_year || ' is not a leap year.');
     END IF;
 END;
-/
