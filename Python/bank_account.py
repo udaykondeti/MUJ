@@ -1,4 +1,4 @@
-class InsufficientBalanceError(Exception):
+class InsufficientBalanceException(Exception):
     pass
 
 
@@ -8,7 +8,7 @@ class BankAccount:
 
     def withdraw(self, amount):
         if amount > self.balance:
-            raise InsufficientBalanceError("Insufficient balance!")
+            raise InsufficientBalanceException("Insufficient Funds. Cannot withdraw")
         self.balance -= amount
         print("Updated balance:", self.balance)
 
@@ -18,5 +18,5 @@ amount = int(input("Enter amount to withdraw: "))
 
 try:
     account.withdraw(amount)
-except InsufficientBalanceError as e:
+except InsufficientBalanceException as e:
     print(e)
