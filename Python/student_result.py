@@ -1,37 +1,36 @@
 # Multilevel inheritance: Student -> Marks -> Result
 
 class Student:
-    def __init__(self, name, roll_number):
+    def __init__(self, name, roll):
         self.name = name
-        self.roll_number = roll_number
+        self.roll = roll
 
 
 class Marks(Student):
-    def __init__(self, name, roll_number, marks):
-        super().__init__(name, roll_number)
-        self.marks = marks  # list of 3 subject marks
+    def __init__(self, name, roll, m1, m2, m3):
+        super().__init__(name, roll)
+        self.m1 = m1
+        self.m2 = m2
+        self.m3 = m3
 
 
 class Result(Marks):
-    def __init__(self, name, roll_number, marks):
-        super().__init__(name, roll_number, marks)
-        self.total = sum(self.marks)
-        self.percentage = self.total / len(self.marks)
-
-    def get_result(self):
-        # Store the final output in a dictionary.
-        return {
-            "Name": self.name,
-            "Roll Number": self.roll_number,
-            "Marks": self.marks,
-            "Total": self.total,
-            "Percentage": self.percentage,
-        }
+    def __init__(self, name, roll, m1, m2, m3):
+        super().__init__(name, roll, m1, m2, m3)
+        self.total = m1 + m2 + m3
+        self.percentage = self.total / 3
 
 
-student = Result("Aman", 101, [85, 90, 95])
-result = student.get_result()
+s = Result("Aman", 101, 85, 90, 95)
 
-# Display all student details in a proper format.
-for key, value in result.items():
-    print(f"{key}: {value}")
+result = {
+    "Name": s.name,
+    "Roll": s.roll,
+    "Total": s.total,
+    "Percentage": s.percentage,
+}
+
+print("Name:", result["Name"])
+print("Roll:", result["Roll"])
+print("Total:", result["Total"])
+print("Percentage:", result["Percentage"])
