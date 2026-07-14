@@ -10,11 +10,11 @@ class BankAccount:
         if amount > self.balance:
             raise InsufficientBalanceException("Insufficient Funds. Cannot withdraw")
         self.balance -= amount
-        print("Updated balance:", self.balance)
+        print("Withdrawal successful")
 
 
 account = BankAccount()
-amount = int(input("Enter amount to withdraw: "))
+amount = int(input())
 
 try:
     account.withdraw(amount)
