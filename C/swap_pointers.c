@@ -1,21 +1,25 @@
 #include <stdio.h>
 
 /* Swap the values of two variables using pointers */
-void swap(int *firstNumber, int *secondNumber) {
-    int temp = *firstNumber;
-    *firstNumber = *secondNumber;
-    *secondNumber = temp;
-}
+void swap(int *firstNum, int *secondNum);
 
 int main() {
-    int firstNumber = 10, secondNumber = 20;
+    int firstNum, secondNum;
 
-    printf("Before swap: firstNumber = %d, secondNumber = %d\n", firstNumber, secondNumber);
+    /* Read the two numbers */
+    scanf("%d %d", &firstNum, &secondNum);
 
-    /* Pass the addresses of the variables to swap their values */
-    swap(&firstNumber, &secondNumber);
+    /* Swap using pointers */
+    swap(&firstNum, &secondNum);
 
-    printf("After swap: firstNumber = %d, secondNumber = %d\n", firstNumber, secondNumber);
+    /* Print the swapped values */
+    printf("%d %d", firstNum, secondNum);
 
     return 0;
+}
+
+void swap(int *firstNum, int *secondNum) {
+    int temp = *firstNum;
+    *firstNum = *secondNum;
+    *secondNum = temp;
 }
