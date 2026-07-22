@@ -51,6 +51,14 @@ For inference the GPU does ~all the work; the old CPU/PCIe 3.0 barely matters (o
 - SEB requires **native Windows 10/11 desktop** (not a VM, not Linux/Mac), webcam + mic ON throughout, antivirus disable-able. Runs on AMD fine (fTPM → TPM 2.0).
 - Current PC runs Linux → for the proctored exam need Windows, or **rent an i5 laptop** (built-in webcam/mic; ~₹3–6k for 2–3 months). RentoMojo is legit but mixed reviews (slow deposit refunds, KYC leak history) — document condition, small deposit, short term. A cheap refurb i5 laptop (~₹20–25k, owned) avoids rental hassle.
 
+## Decision log
+- **2026-07-22:** Defer the AM5 upgrade (CPU + board + DDR5) to the future. Keep the current system (i5-6402P / Z170 / 32 GB DDR4 / RTX 5060 Ti) for now — local AI already works on the 5060 Ti for anything fitting in 16 GB VRAM, so no spend needed yet.
+  - Current board (Z170M-D3H, LGA1151) accepts only Intel 6th/7th-gen CPUs (max i7-7700K) — not worth upgrading; no Ryzen and no Windows 11 possible on it.
+  - When upgrading: buy **Ryzen 9 7900 + B650 board + DDR5** together as one set (can't split across time), reuse GPU/PSU/cooler.
+  - RAM plan: start with **1×16 GB DDR5-6000 CL30 EXPO**, add a matching 1×16 GB later for 2×16 = 32 GB (avoids the 4-DIMM speed penalty on AM5).
+  - Board depends on case size: **4 rear slots = micro-ATX → Gigabyte B650M Aorus Elite AX ICE (~₹21.7k)**; **7 slots = ATX → Gigabyte B650 Aorus Elite AX V2 (~₹24k)**.
+
 ## Open decisions
-- Whether to upgrade now vs keep current system until hitting the 16 GB VRAM wall.
-- Windows-for-exam approach: dual-boot current PC, rent a laptop, or buy cheap refurb laptop.
+- When to actually pull the trigger on the AM5 upgrade (driven by hitting the 16 GB VRAM wall / wanting a modern base).
+- Windows-for-exam approach: dual-boot Windows 10 on current PC (free, CPU supports it), rent a laptop, or buy a cheap refurb laptop.
+- Confirm case size (4 vs 7 rear slots) before buying an AM5 board.
