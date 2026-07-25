@@ -1,0 +1,24 @@
+# systemd unit to run the vLLM Gemma NVFP4 server via Docker Compose on boot.
+#
+# Install:
+#   sudo cp systemd/vllm-gemma.service /etc/systemd/system/
+#   # edit WorkingDirectory below to the absolute path of this repo on kirakon
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now vllm-gemma.service
+#   journalctl -u vllm-gemma -f
+[Unit]
+Description=vLLM Gemma 4 12B (NVFP4) OpenAI server
+Requires=docker.service
+After=docker.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/home/kirakon/MUJ/vllm-gemma-nvfp4
+ExecStart=/usr/bin/docker compose up -d --pull always
+ExecStop=/usr/bin/docker compose down
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target
