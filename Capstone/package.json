@@ -1,0 +1,24 @@
+{
+  "name": "procurewise",
+  "version": "1.0.0",
+  "description": "ProcureWise — Vendor Comparison & Procurement Assistant (Gen AI for Business capstone, Topic 04)",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "test": "node tests/scoring.test.js",
+    "seed": "node server/seed.js --write"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "genai",
+    "procurement",
+    "vendor-comparison",
+    "capstone"
+  ],
+  "author": "Uday Kiran Kondeti",
+  "license": "MIT"
+}

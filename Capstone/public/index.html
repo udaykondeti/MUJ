@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProcureWise — Vendor Comparison & Procurement Assistant</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%A7%BE%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">🧾</span>
+        <div>
+          <div class="brand-name">ProcureWise</div>
+          <div class="brand-sub">Procurement Assistant</div>
+        </div>
+      </div>
+      <nav class="nav" id="nav">
+        <button class="nav-item active" data-view="overview"><span>📊</span> Overview</button>
+        <button class="nav-item" data-view="quotations"><span>📥</span> Quotations</button>
+        <button class="nav-item" data-view="criteria"><span>⚖️</span> Criteria &amp; Weights</button>
+        <button class="nav-item" data-view="comparison"><span>📈</span> Comparison</button>
+        <button class="nav-item" data-view="recommendation"><span>✅</span> Recommendation &amp; Review</button>
+        <button class="nav-item" data-view="emails"><span>✉️</span> Clarification Emails</button>
+        <button class="nav-item" data-view="policy"><span>📜</span> Policy Q&amp;A</button>
+        <button class="nav-item" data-view="audit"><span>🗂️</span> Audit Trail</button>
+      </nav>
+      <div class="sidebar-foot">
+        <div id="ai-badge" class="ai-badge">AI: …</div>
+        <button id="reset-btn" class="btn btn-ghost btn-sm" title="Restore the demo scenario">↺ Reset demo</button>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1 id="view-title">Overview</h1>
+          <p id="view-sub" class="muted"></p>
+        </div>
+        <div class="topbar-scenario" id="topbar-scenario"></div>
+      </header>
+
+      <section class="content" id="content"><!-- views render here --></section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
