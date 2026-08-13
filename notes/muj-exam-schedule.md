@@ -1,6 +1,6 @@
 # MUJ Exam Schedule — Aug 2026 (Roll 261410609980, K Uday Kiran, MCA)
 
-_Source: E-Admit Card. All times IST. Log in within 10 minutes of start time._
+_Source: E-Admit Card (REVISED, 2026-07-23). All times IST. Log in within 10 minutes of start time._
 
 ## Key prep dates
 | Date | Event | Notes |
@@ -8,19 +8,25 @@ _Source: E-Admit Card. All times IST. Log in within 10 minutes of start time._
 | **22-Jul-2026** | SEB download available | https://tinyurl.com/nhw624e6 — install before mock |
 | **24-Jul-2026, 12:00–15:00** | **MOCK EXAM (mandatory)** | Login `261410609980MOCK`. **Use to verify Windows + SEB + webcam/mic work.** |
 
-## Live exam schedule
+## Live exam schedule (revised)
 | # | Date | Time (IST) | Subject | Code | Login |
 |---|------|-----------|---------|------|-------|
-| 1 | Sun 16-Aug | 12:00–15:00 | Discrete Mathematics & Graph Theory | DCA6108 | 261410609980DCA6108 |
-| 2 | Sun 16-Aug | 19:00–22:00 | Programming & Problem-Solving using C | DCA6110 | 261410609980DCA6110 |
-| 3 | **Tue 18-Aug** | **15:00–17:00** | **RDBMS – Practical** | **DCA6132** | @mujonline.edu.in (LMS) |
-| 4 | **Wed 19-Aug** | **15:00–17:00** | **C – Practical** | **DCA6133** | @mujonline.edu.in (LMS) |
-| 5 | **Thu 20-Aug** | **15:00–17:00** | **Python – Practical** | **DCA6134** | @mujonline.edu.in (LMS) |
-| 6 | Sat 22-Aug | 08:30–11:30 | Relational Database Management System | DCA6111 | 261410609980DCA6111 |
-| 7 | Sat 22-Aug | 12:00–15:00 | Data Visualization | DCA6112 | 261410609980DCA6112 |
-| 8 | Sun 23-Aug | 12:00–15:00 | Python Programming | DCA6109 | 261410609980DCA6109 |
+| 1 | **Tue 18-Aug** | **15:00–17:00** | **RDBMS – Practical** | **DCA6132** | @mujonline.edu.in (LMS) |
+| 2 | **Wed 19-Aug** | **15:00–17:00** | **C – Practical** | **DCA6133** | @mujonline.edu.in (LMS) |
+| 3 | **Thu 20-Aug** | **15:00–17:00** | **Python – Practical** | **DCA6134** | @mujonline.edu.in (LMS) |
+| 4 | Sat 22-Aug | 12:00–15:00 | Data Visualization | DCA6112 | 261410609980DCA6112 |
+| 5 | Sun 23-Aug | 12:00–15:00 | Python Programming | DCA6109 | 261410609980DCA6109 |
+| 6 | Sun 23-Aug | 19:00–22:00 | Relational Database Management System | DCA6111 | 261410609980DCA6111 |
+| 7 | Tue 25-Aug | 14:00–17:00 | Programming & Problem-Solving using C | DCA6110 | 261410609980DCA6110 |
+| 8 | Sat 29-Aug | 12:00–15:00 | Discrete Mathematics & Graph Theory | DCA6108 | 261410609980DCA6108 |
 
 **Practicals (bold)** = the U-Next lab coding exams (DCA6132 SQL, DCA6133 C, DCA6134 Python) — the exercises practiced in this repo.
+
+### Changes from the previous admit card
+- DCA6108 Discrete Maths: 16-Aug → **29-Aug** (12:00–15:00)
+- DCA6110 C theory: 16-Aug → **25-Aug** (14:00–17:00, note the 2 PM start)
+- DCA6111 RDBMS theory: 22-Aug 08:30 → **23-Aug 19:00–22:00**
+- Practicals (6132/6133/6134), Data Viz (6112), Python (6109): unchanged
 
 ## Reminders
 - Login password = OEBS booking password; practicals use student portal / LMS credentials.
@@ -30,4 +36,4 @@ _Source: E-Admit Card. All times IST. Log in within 10 minutes of start time._
 - ⚠️ Current CPU (i5-6402P, 6th gen) is **below MUJ's stated minimum (i5 10th gen)** — treat the mock as the real compatibility test; keep rent-a-laptop as backup.
 
 ## Calendar file
-An importable calendar with all events + 1-day and 1-hour reminders is at `notes/muj-exam-schedule.ics` (import into any calendar app).
+An importable calendar with all events + 1-day and 1-hour reminders is at `notes/muj-exam-schedule.ics` (import into any calendar app). SEQUENCE bumped to 1 to reflect this revision.
